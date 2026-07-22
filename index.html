@@ -236,13 +236,22 @@
     }
 
     .faculty-photo {
-      display: block;
-      width: 100%;
-      height: 360px;
-      object-fit: cover;
-      object-position: center top;
-      background: var(--light-gray);
-    }
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  background: var(--light-gray);
+}
+
+/* Sean's original photo is already tightly cropped */
+.sean-photo {
+  object-position: center 22%;
+}
+
+/* Juha's original photo includes more of the upper body */
+.juha-photo {
+  object-position: center 18%;
+}
 
     .person-content {
       padding: 30px;
@@ -549,7 +558,7 @@
           <img
             src="images/sean-pradhan.jpg"
             alt="Portrait of Dr. Sean Pradhan"
-            class="faculty-photo"
+            class="faculty-photo sean-photo"
           >
 
           <div class="person-content">
@@ -580,7 +589,7 @@
           <img
             src="images/juha-yoon.jpg"
             alt="Portrait of Dr. Juha Yoon"
-            class="faculty-photo"
+            class="faculty-photo juha-photo"
           >
 
           <div class="person-content">
